@@ -1,0 +1,22 @@
+{
+  "name": "simple-node-server",
+  "version": "1.0.0",
+  "description": "A simple Node.js server to run in Azure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkio/simple-node-server.git"
+  },
+  "author": "Brian Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarkio/simple-node-server/issues"
+  },
+  "homepage": "https://github.com/clarkio/simple-node-server#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
