@@ -4,7 +4,7 @@
   "description": "A simple Node.js server to run in Azure",
   "main": "server.js",
   "scripts": {
-    "start": "node --inspect --debug-brk server.js"
+    "start": "node --inspect --debug-brk server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
