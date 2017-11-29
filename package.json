@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "snyk test"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,9 @@
   "homepage": "https://github.com/clarkio/simple-node-server#readme",
   "dependencies": {
     "applicationinsights": "^1.0.0",
-    "express": "^4.15.3"
+    "express": "^4.16.0"
+  },
+  "devDependencies": {
+    "snyk": "^1.52.0"
   }
 }
