@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "snyk test"
+    "test": "snyk test",
+    "remote_debug": "node --inspect=0.0.0.0:$APPSVC_TUNNEL_PORT"
   },
   "repository": {
     "type": "git",
