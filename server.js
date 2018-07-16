@@ -4,7 +4,7 @@ const port = process.env.PORT || 4000;
 const runningMessage = 'Server is running on port ' + port;
 
 app.get('/', (req, res) => {
-  console.log('API was successfully requested');
+  console.log('API was successfully requested in STAGING');
   res.send(runningMessage);
 });
 
