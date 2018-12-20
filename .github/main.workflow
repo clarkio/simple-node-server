@@ -1,6 +1,6 @@
 workflow "New workflow" {
   on = "push"
-  resolves = ["./node_modules/.bin/snyk"]
+  resolves = ["snyk test"]
 }
 
 action "npm install" {
@@ -14,8 +14,9 @@ action "npm audit" {
   args = "audit"
 }
 
-action "./node_modules/.bin/snyk" {
-  uses = "./node_modules/.bin/snyk"
+action "snyk test" {
+  uses = "actions/bin/sh@master"
   needs = ["npm audit"]
   args = "test"
+  runs = "./node_modules/.bin/snyk"
 }
