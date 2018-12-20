@@ -1,9 +1,15 @@
 workflow "New workflow" {
   on = "push"
-  resolves = ["GitHub Action for npm"]
+  resolves = ["npm audit"]
 }
 
-action "GitHub Action for npm" {
+action "npm install" {
   uses = "actions/npm@e7aaefe"
+  args = "install"
+}
+
+action "npm audit" {
+  uses = "actions/npm@e7aaefe"
+  needs = ["npm install"]
   args = "audit"
 }
