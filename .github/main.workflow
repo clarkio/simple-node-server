@@ -20,7 +20,5 @@ action "npm audit" {
 action "clarkio/snyk-cli-action@master" {
   uses = "clarkio/snyk-cli-action@master"
   args = "test"
-  env = {
-    TEST = "test"
-  }
+  secrets = ["SNYK_TOKEN"]
 }
