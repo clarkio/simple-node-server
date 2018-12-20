@@ -1,8 +1,8 @@
 workflow "New workflow" {
   on = "push"
   resolves = [
-    "Snyk",
     "npm audit",
+    "clarkio/snyk-cli-action@master",
   ]
 }
 
@@ -17,8 +17,7 @@ action "npm audit" {
   args = "audit"
 }
 
-action "Snyk" {
+action "clarkio/snyk-cli-action@master" {
   uses = "clarkio/snyk-cli-action@master"
-  needs = ["npm audit"]
   args = "test"
 }
