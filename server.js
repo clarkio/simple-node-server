@@ -8,6 +8,8 @@ app.get('/', (req, res) => {
   res.send(runningMessage);
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(runningMessage);
 });
+
+module.exports = server;
