@@ -8,6 +8,13 @@ app.get('/', (req, res) => {
   res.send(runningMessage);
 });
 
+app.get('/users', (req, res) => {
+  res.json([
+    {username: 'clarkio', name: 'Brian Clark'}
+  ]);
+})
+
+
 const server = app.listen(port, () => {
   console.log(runningMessage);
 });
