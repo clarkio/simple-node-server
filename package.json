@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/clarkio/simple-node-server#readme",
   "dependencies": {
-    "applicationinsights": "^1.0.0",
+    "applicationinsights": "^1.8.10",
     "express": "^4.16.0"
   },
   "devDependencies": {
